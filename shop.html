@@ -1,0 +1,175 @@
+<!DOCTYPE html>	
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PHONE ARENA - YOUR DIGITAL STORE</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<img src="images/logo.png" width="250px">
+				</div>
+			
+				<nav>
+					<ul>
+						<li><a href="index.html">HOME<hr></a></li>
+						<li><a href="aboutus.html">ABOUT US<hr></a></li>
+						<li><a href="shop.html">SHOP NOW<hr></a></li>
+						<li><a href="contactus.html">CONTACT US<hr></a></li>
+					
+					</ul>
+				</nav>
+				
+			</div>
+				<nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+					<div class="row">
+						<div class="col">
+						  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+						</div>
+				</nav>
+
+						
+					
+					
+
+					<div class="container">
+						<div class="row">
+						  <div class="col">
+							<div class="card" style="width: 20rem;">
+					  <img class="card-img-top" src="images/product1.jpg" alt="Card image cap">
+					  <div class="card-block">
+						<h4 class="card-title">galaxy ultra22</h4>
+						<p class="card-text">Price: £1099</p>
+						<a href="#" data-name="galaxy ultra 22" data-price="1099" class="add-to-cart btn btn-primary">Add to cart</a>
+					  </div>
+					</div>
+						  </div>
+						  <div class="col">
+							<div class="card" style="width: 20rem;">
+					  <img class="card-img-top"  src="images/product2.jpg" alt="Card image cap">
+					  <div class="card-block">
+						<h4 class="card-title">galaxy note 20</h4>
+						<p class="card-text">Price: £880</p>
+						<a href="#" data-name="galaxy note 20" data-price="880" class="add-to-cart btn btn-primary">Add to cart</a>
+					  </div>
+					</div>
+						  </div>
+						  <div class="col">
+							<div class="card" style="width: 20rem;">
+					  <img class="card-img-top"  src="images/product3.png" alt="Card image cap">
+					  <div class="card-block">
+						<h4 class="card-title">iphone 13</h4>
+						<p class="card-text">Price: £560</p>
+						<a href="#" data-name="iphone 13" data-price="560" class="add-to-cart btn btn-primary">Add to cart</a>
+					  </div>
+					</div>
+						  
+						  </div>
+						</div>
+					</div>
+						
+						
+						
+						<div class="container">
+						<div class="row">
+						  <div class="col">
+							<div class="card" style="width: 20rem;">
+					  <img class="card-img-top" src="images/product4.jpg" alt="Card image cap">
+					  <div class="card-block">
+						<h4 class="card-title">iphone 13 pro max</h4>
+						<p class="card-text">Price: £750</p>
+						<a href="#" data-name="iphone 13 pro max" data-price="750" class="add-to-cart btn btn-primary">Add to cart</a>
+					  </div>
+					</div>
+						  </div>
+						  <div class="col">
+							<div class="card" style="width: 20rem;">
+					  <img class="card-img-top"  src="images/product5.jpg" alt="Card image cap">
+					  <div class="card-block">
+						<h4 class="card-title">one plus 10 pro</h4>
+						<p class="card-text">Price: £550</p>
+						<a href="#" data-name="one plus 10 pro" data-price="550" class="add-to-cart btn btn-primary">Add to cart</a>
+					  </div>
+					  
+					</div>
+						  </div>
+						  <div class="col">
+							<div class="card" style="width: 20rem;">
+					  <img class="card-img-top"  src="images/product6.jpg" alt="Card image cap">
+					  <div class="card-block">
+						<h4 class="card-title">one plus nord</h4>
+						<p class="card-text">Price: £300</p>
+						<a href="#" data-name="one plus nord" data-price="300" class="add-to-cart btn btn-primary">Add to cart</a>
+					  </div>
+					</div>
+						  </div>
+						</div>
+					</div>
+
+					  
+					
+					<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<table class="show-cart table">
+							  
+							</table>
+							<div>Total price: £<span class="total-cart"></span></div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" onclick="location.href='order.html';" class="btn btn-primary">Order now</button>
+						  </div>
+						</div>
+					  </div>
+					</div> 
+
+
+				
+					 
+					
+					<div class="row">
+					<div class="col-3">
+					<hr>
+					<p style="text-align:center;">&copy; 2022 | PHONE ARENA Ltd, all rights reserved.<br></p>
+					</div>
+					</div>
+		</div>
+		
+				
+			
+	</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="./js/script.js"></script>	
+
+</body>
+</html> 
+
+
+<style>
+
+
+.show-cart li {
+  display: flex;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+
+</style>
